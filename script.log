@@ -1,0 +1,435 @@
+1520230993:2018.03.05:11.23.13: main OK, try to start as: script.sh -r -n testdb0
+1520230993:2018.03.05:11.23.13: main started with spid: 7917
+1520230993:2018.03.05:11.23.13: main WORK_ENABLE=1
+1520230993:2018.03.05:11.23.13: main script is running under root, env is:
+1520230993:2018.03.05:11.23.13: main current zfs-schema is:
+1520230993: CLICOLOR=1
+1520230993: CVS_RSH=ssh
+1520230993: G_BROKEN_FILENAMES=1
+1520230993: GREP_COLOR=1;32
+1520230993: GREP_OPTIONS=--color=auto
+1520230993: HISTCONTROL=ignoredups
+1520230993: HISTSIZE=1000
+1520230993: HOME=/root
+1520230993: HOSTNAME=dev1
+1520230993: LANG=en_US.UTF-8
+1520230993: LD_LIBRARY_PATH=/opt/oracle/product/11.2.0/lib:/lib:/usr/lib:/usr/lib64
+1520230993: LESSOPEN=||/usr/bin/lesspipe.sh %s
+1520230993: LOGNAME=root
+1520230993: LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.tbz=01;31:*.tbz2=01;31:*.bz=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+1520230993: LS_OPTS=--color=auto
+1520230993: MAIL=/var/spool/mail/root
+1520230993: NLS_DATE_FORMAT=DD-MM-RR HH24:MI:SS
+1520230993: NLS_LANG=American.UTF8
+1520230993: OPRREPOS=/etc/oracle/repos.opr
+1520230993: ORACLE_HOME=/opt/oracle/product/11.2.0
+1520230993: ORACLE_SID=maindb
+1520230993: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle/product/11.2.0/bin:/opt/rias//sbin:/opt/rias//bin:/opt/rias//sbin:/opt/rias/:/opt/rias//sbin:/opt/rias//bin:/root/bin
+1520230993: PWD=/root
+1520230993: QTDIR=/usr/lib64/qt-3.3
+1520230993: SHELL=/bin/bash
+1520230993: SHLVL=2
+1520230993: SUDO_COMMAND=/bin/bash
+1520230993: SUDO_GID=5034
+1520230993: SUDO_UID=5034
+1520230993: SUDO_USER=maksimivanov
+1520230993: TERM=xterm-color
+1520230993: TNS_ADMIN=/etc/oracle
+1520230993: USERNAME=root
+1520230993: USER=root
+1520230993: _=/usr/bin/env
+1520230993: NAME                          USED  AVAIL  REFER  MOUNTPOINT
+1520230993: oradata                      1.49T   254G    21K  /db
+1520230993: oradata/u00                    24K   254G    24K  /db/u00
+1520230993: oradata/u11                  1.49T   254G  1.42T  /db/u11
+1520230993: oradata/u13                    60K   254G    60K  /db/u13
+1520230993: oradata/u11@rnw_testdb0      29.3G      -  1.42T  -
+1520230993: oradata/u11/cln_rnw_testdb0  43.4G   254G  1.45T  /db/u11/testdb0
+1520230993:2018.03.05:11.23.13: main ok work is permitted by configuration;
+1520230993:2018.03.05:11.23.13: main try to reag value of mountpoint property of oradata/u11 filesystem
+1520230993:2018.03.05:11.23.13: main ok, ORIGIN_ZFS_MOUNTPOINT=/db/u11
+1520230993:2018.03.05:11.23.13: main ok SID of original db is: maindb
+1520230993:2018.03.05:11.23.13: main Value: testdb0 will be used as name of the processed test db
+1520230993:2018.03.05:11.23.13: main calculated value: CLONE_ZFS_MOUNTPOINT=/db/u11/testdb0
+1520230993:2018.03.05:11.23.13: main ADDITIONAL_FOLDERS: oradata/maindb
+1520230993:2018.03.05:11.23.13: main calculated value: CLONE_DB_FILE_PATH=/db/u11/testdb0/oradata/maindb
+1520230993:2018.03.05:11.23.13: main OK: directory for lock-file exists and writable;
+1520230993:2018.03.05:11.23.13: main renew operation is demanded by script args
+1520230993:2018.03.05:11.23.13: main lock-file name is: /var/run/rias/script_rnw_testdb0.lck
+1520230993:2018.03.05:11.23.13: main OK: lock-file created
+1520230993: oracle    8126  0.0  0.0  83260 11768 ?        Ss   11:23   0:00 /opt/oracle/product/11.2.0/bin/tnslsnr LISTENER -inherit
+1520230993: root      8134  0.0  0.0 103304   912 pts/4    S+   11:23   0:00 grep tnsl
+1520230993:2018.03.05:11.23.14: check_if_pfile_exist ok pfile /opt/oracle/product/11.2.0/dbs/inittestdb0.ora exist;
+1520230993:2018.03.05:11.23.14: do_renew_test_db ok pfile /opt/oracle/product/11.2.0/dbs/inittestdb0.ora exists 
+1520230993:2018.03.05:11.23.14: pfile_edit try to edit db_name='maindb' in /opt/oracle/product/11.2.0/dbs/inittestdb0.ora
+1520230993:2018.03.05:11.23.14: pfile_edit db_name exists in pfile
+1520230993:2018.03.05:11.23.14: pfile_edit editing
+1520230993:2018.03.05:11.23.14: pfile_edit *.db_name='maindb'
+1520230993:2018.03.05:11.23.14: do_renew_test_db ok pfile for test db edited
+1520230993:2018.03.05:11.23.14: create_orapw_file ok, try to create orapwd-file for: testdb0
+1520230993:2018.03.05:11.23.14: create_orapw_file exiting with code: 0
+1520230993:2018.03.05:11.23.15: RMAN_ENABLE=0
+1520230993:2018.03.05:11.23.15: cancel_standby_recover try to cancel recover in standby-db maindb
+1520230993: 
+1520230993: STATUS
+1520230993: ------------------------------------
+1520230993: MOUNTED
+1520230993: 
+1520230993: alter database recover cancel
+1520230993: *
+1520230993: ERROR at line 1:
+1520230993: ORA-01112: media recovery not started
+1520230993: 
+1520230993: 
+1520230993: HOME=/home/oracle
+1520230993: LD_LIBRARY_PATH=/opt/oracle/product/11.2.0/lib:/lib:/usr/lib:/usr/lib64
+1520230993: LOGNAME=oracle
+1520230993: MAIL=/var/spool/mail/oracle
+1520230993: OPRREPOS=/etc/oracle/repos.opr
+1520230993: ORACLE_HOME=/opt/oracle/product/11.2.0
+1520230993: ORACLE_SID=maindb
+1520230993: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle/product/11.2.0/bin:/opt/rias//sbin:/opt/rias//bin:/opt/rias//sbin:/opt/rias/:/opt/rias//sbin:/opt/rias//bin:/root/bin
+1520230993: PS1=\u@$HOSTN: $ORACLE_SID \W\$ 
+1520230993: PWD=/home/oracle
+1520230993: TNS_ADMIN=/etc/oracle
+1520230993: USER=oracle
+1520230993:2018.03.05:11.23.15: OK: standby-db recovery canceled; TIME:0h 0m 0s
+1520230993:2018.03.05:11.23.15: shutdown_db try to shutdown db with option: immediate maindb
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: ORA-01109: database not open
+1520230993: 
+1520230993: 
+1520230993: Database dismounted.
+1520230993: ORACLE instance shut down.
+1520230993:2018.03.05:11.23.21: shutdown_db OK: db maindb stopped; TIME:0h 0m 6s
+1520230993:2018.03.05:11.23.21: shutdown_db try to shutdown db with option: abort testdb0
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: ORACLE instance shut down.
+1520230993:2018.03.05:11.23.22: shutdown_db OK: db maindb stopped; TIME:0h 0m 1s
+1520230993:2018.03.05:11.23.22: create_snapshot Try to create snapshot oradata/u11@rnw_testdb0 for oradata/u11 destroy_before_create option: Y
+1520230993:2018.03.05:11.23.22: create_snapshot OK: oradata/u11 exists and it's filesystem
+1520230993:2018.03.05:11.23.23: create_snapshot ERROR: snapshot with name oradata/u11@rnw_testdb0 already exists
+1520230993:2018.03.05:11.23.23: create_snapshot destroy before create mode is allowed, destroying oradata/u11@rnw_testdb0
+1520230993: destroy	oradata/u11@rnw_testdb0
+1520230993: reclaim	31452575232
+1520230993: destroy	oradata/u11/cln_rnw_testdb0
+1520230993:2018.03.05:11.23.32: destroy_snapshot exiting with exit code: 0
+1520230993:2018.03.05:11.23.32: create_snapshot OK: creating zfs-snapshot oradata/u11@rnw_testdb0
+1520230993:2018.03.05:11.23.38: create_snapshot OK: snapshot created
+1520230993: NAME                      USED  AVAIL  REFER  MOUNTPOINT
+1520230993: oradata/u11              1.42T   256G  1.42T  /db/u11
+1520230993: oradata/u11@rnw_testdb0      0      -  1.42T  -
+1520230993:2018.03.05:11.23.38: do_renew_test_db OK: snapshot rnw_testdb0 for oradata/u11 created
+1520230993:2018.03.05:11.23.38: create_clone try to create clone oradata/u11/cln_rnw_testdb0 for oradata/u11@rnw_testdb0 and mount it to /db/u11/testdb0
+1520230993:2018.03.05:11.23.38: create_clone ok: mount-path /db/u11/testdb0 exists and it's directory
+1520230993:2018.03.05:11.23.38: create_clone zfs-clone oradata/u11/cln_rnw_testdb0 doesn't exist
+1520230993:2018.03.05:11.23.38: create_clone creating zfs-clone oradata/u11/cln_rnw_testdb0
+1520230993: NAME                          USED  AVAIL  REFER  MOUNTPOINT
+1520230993: oradata/u11                  1.42T   258G  1.42T  /db/u11
+1520230993: oradata/u11@rnw_testdb0          0      -  1.42T  -
+1520230993: oradata/u11/cln_rnw_testdb0     1K   258G  1.42T  /db/u11/testdb0
+1520230993:2018.03.05:11.23.50: create_clone attempt to create zfs-clone is done, exiting with code 0
+1520230993:2018.03.05:11.23.50: do_renew_test_db OK: zfs-clone for rnw_testdb0 for oradata/u11 was created
+1520230993:2018.03.05:11.23.50: do_renew_test_db try to set properties for cln_rnw_testdb0
+1520230993:2018.03.05:11.23.50: set_zfs_filesystem_properties try to set compression=off for oradata/u11/cln_rnw_testdb0
+1520230993:2018.03.05:11.23.56: do_renew_test_db OK: property setted
+1520230993:2018.03.05:11.23.56: startup_db try to startup db with option: mount pfile='/opt/oracle/product/11.2.0/dbs/inittestdb0.ora' maindb
+1520230993: ORACLE instance started.
+1520230993: Total System Global Area 943718400 bytes
+...
+1520230993: Database mounted.
+1520230993: MOUNTED
+1520230993: 
+1520230993: db_name 			     string			       maindb
+1520230993: alert-log:
+1520230993: /var/log/oracle/maindb/diag/rdbms/maindb/maindb/trace/alert_maindb.log
+1520230993: 
+1520230993: HOME=/home/oracle
+1520230993: LD_LIBRARY_PATH=/opt/oracle/product/11.2.0/lib:/lib:/usr/lib:/usr/lib64
+1520230993: LOGNAME=oracle
+1520230993: MAIL=/var/spool/mail/oracle
+1520230993: OPRREPOS=/etc/oracle/repos.opr
+1520230993: ORACLE_HOME=/opt/oracle/product/11.2.0
+1520230993: ORACLE_SID=maindb
+1520230993: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle/product/11.2.0/bin:/opt/rias//sbin:/opt/rias//bin:/opt/rias//sbin:/opt/rias/:/opt/rias//sbin:/opt/rias//bin:/root/bin
+1520230993: PS1=\u@$HOSTN: $ORACLE_SID \W\$ 
+1520230993: PWD=/home/oracle
+1520230993: TNS_ADMIN=/etc/oracle
+1520230993: USER=oracle
+1520230993:2018.03.05:11.24.12: startup_db OK: db maindb started with exit code: 0; TIME:0h 0m 16s
+1520230993:2018.03.05:11.24.12: do_renew_test_db ok clone-db started with pfile=/opt/oracle/product/11.2.0/dbs/inittestdb0.ora
+1520230993:2018.03.05:11.24.12: rename_db_files try to work with arg: /db/u11/testdb0/oradata/maindb maindb
+1520230993:2018.03.05:11.24.12: rename_db_files ok, try to change path to files of the clone-db to: /db/u11/testdb0/oradata/maindb
+1520230993: PHYSICAL STANDBY MOUNTED
+1520230993: Db file schema before renaming
+1520230993: Redo log files
+1520230993:  /db/u00/oradata/maindb/redo01_02.dbf
+1520230993:  /db/u00/oradata/maindb/redo02_02.dbf
+1520230993:  /db/u00/oradata/maindb/redo03_02.dbf
+1520230993:  /db/u00/oradata/maindb/redo04_02.dbf
+1520230993:  /db/u01/oradata/maindb/redo04_01.dbf
+1520230993:  /db/u01/oradata/maindb/redo01_01.dbf
+1520230993:  /db/u01/oradata/maindb/redo02_01.dbf
+1520230993:  /db/u01/oradata/maindb/redo03_01.dbf
+1520230993: Data files
+1520230993: SYSTEM /db/u11/oradata/maindb/system.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/index.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/users01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/tpcctab_01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/tpchtab_01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/undotbs.dbf
+1520230993: Temp files
+1520230993: ONLINE /db/u11/oradata/maindb/temp01.dbf
+1520230993: Try to rename all those files
+1520230993: alter database rename file '/db/u00/oradata/maindb/redo01_02.dbf' to '/db/u11/testdb0/oradata/maindb/redo01_02.dbf'
+1520230993: alter database rename file '/db/u00/oradata/maindb/redo02_02.dbf' to '/db/u11/testdb0/oradata/maindb/redo02_02.dbf'
+1520230993: alter database rename file '/db/u00/oradata/maindb/redo03_02.dbf' to '/db/u11/testdb0/oradata/maindb/redo03_02.dbf'
+1520230993: alter database rename file '/db/u00/oradata/maindb/redo04_02.dbf' to '/db/u11/testdb0/oradata/maindb/redo04_02.dbf'
+1520230993: alter database rename file '/db/u01/oradata/maindb/redo04_01.dbf' to '/db/u11/testdb0/oradata/maindb/redo04_01.dbf'
+1520230993: alter database rename file '/db/u01/oradata/maindb/redo01_01.dbf' to '/db/u11/testdb0/oradata/maindb/redo01_01.dbf'
+1520230993: alter database rename file '/db/u01/oradata/maindb/redo02_01.dbf' to '/db/u11/testdb0/oradata/maindb/redo02_01.dbf'
+1520230993: alter database rename file '/db/u01/oradata/maindb/redo03_01.dbf' to '/db/u11/testdb0/oradata/maindb/redo03_01.dbf'
+1520230993: alter database rename file '/db/u11/oradata/maindb/system.dbf' to '/db/u11/testdb0/oradata/maindb/system.dbf'
+1520230993: alter database rename file '/db/u11/oradata/maindb/users01.dbf' to '/db/u11/testdb0/oradata/maindb/users01.dbf'
+1520230993: alter database rename file '/db/u11/oradata/maindb/undotbs.dbf' to '/db/u11/testdb0/oradata/maindb/undotbs.dbf'
+1520230993: alter database rename file '/db/u11/oradata/maindb/tpcctab_01.dbf' to '/db/u11/testdb0/oradata/maindb/tpcctab_01.dbf'
+1520230993: alter database rename file '/db/u11/oradata/maindb/tpchtab_01.dbf' to '/db/u11/testdb0/oradata/maindb/tpchtab_01.dbf'
+1520230993: alter database tempfile '/db/u11/oradata/maindb/temp01.dbf' drop;
+1520230993: Db file schema after renaming
+1520230993: Redo log files
+1520230993:  /db/u11/testdb0/oradata/maindb/redo01_02.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo02_02.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo03_02.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo04_02.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo04_01.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo01_01.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo02_01.dbf
+1520230993:  /db/u11/testdb0/oradata/maindb/redo03_01.dbf
+1520230993: Data files
+1520230993: SYSTEM /db/u11/oradata/maindb/system.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/index.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/users01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/tpcctab_01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/tpchtab_01.dbf
+1520230993: ONLINE /db/u11/oradata/maindb/undotbs.dbf
+1520230993: Temp files
+1520230993: HOME=/home/oracle
+1520230993: LD_LIBRARY_PATH=/opt/oracle/product/11.2.0/lib:/lib:/usr/lib:/usr/lib64
+1520230993: LOGNAME=oracle
+1520230993: MAIL=/var/spool/mail/oracle
+1520230993: OPRREPOS=/etc/oracle/repos.opr
+1520230993: ORACLE_HOME=/opt/oracle/product/11.2.0
+1520230993: ORACLE_SID=maindb
+1520230993: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle/product/11.2.0/bin:/opt/rias//sbin:/opt/rias//bin:/opt/rias//sbin:/opt/rias/:/opt/rias//sbin:/opt/rias//bin:/root/bin
+1520230993: PS1=\u@$HOSTN: $ORACLE_SID \W\$ 
+1520230993: PWD=/home/oracle
+1520230993: TNS_ADMIN=/etc/oracle
+1520230993: USER=oracle
+1520230993:2018.03.05:11.24.16: rename_db_files exit code: 0 TIME:0h 0m 4s
+1520230993:2018.03.05:11.24.16: do_renew_test_db file rename: ok
+1520230993:2018.03.05:11.24.16: set_new_dbname ok, try to set new db-name: testdb0 work under ORACLE_SID=maindb
+1520230993: 
+1520230993: DBNEWID: Release 11.2.0 - Production on 
+1520230993: 
+1520230993: Copyright (c) 1982, 2011, Oracle and/or its affiliates.  All rights reserved.
+1520230993: 
+1520230993: Connected to database maindb (DBID=XXXXXXXXXX)
+1520230993: 
+1520230993: Connected to server version 11.2.0
+1520230993: 
+1520230993: Control Files in database:
+1520230993:     /db/u11/testdb0/oradata/maindb/ctrl00.ctl
+1520230993: 
+1520230993: Change database ID and database name maindb to TESTDB0? (Y/[N]) => 
+1520230993: Proceeding with operation
+1520230993: Changing database ID from XXXXXXXXXX to YYYYYYYYYY
+1520230993: Changing database name from maindb to TESTDB0
+1520230993:     Control File /db/u11/testdb0/oradata/maindb/ctrl00.ctl - modified
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/system.db - dbid changed, wrote new name
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/index.db - dbid changed, wrote new name
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/users01.db - dbid changed, wrote new name
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/undotbs.db - dbid changed, wrote new name
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/tpcctab_01.db - dbid changed, wrote new name
+1520230993:     Datafile /db/u11/testdb0/oradata/maindb/tpchtab_01.db - dbid changed, wrote new name
+1520230993:     Control File /db/u11/testdb0/oradata/maindb/ctrl00.ctl - dbid changed, wrote new name
+1520230993:     Instance shut down
+1520230993: 
+1520230993: Database name changed to TESTDB0.
+1520230993: Modify parameter file and generate a new password file before restarting.
+1520230993: Database ID for database TESTDB0 changed to YYYYYYYYYY.
+1520230993: All previous backups and archived redo logs for this database are unusable.
+1520230993: Database has been shutdown, open database with RESETLOGS option.
+1520230993: Succesfully changed database name and ID.
+1520230993: DBNEWID - Completed succesfully.
+1520230993: 
+1520230993:2018.03.05:11.24.24: set_new_dbname exiting with code: 0
+1520230993:2018.03.05:11.24.24: pfile_edit try to edit db_name='testdb0' in /opt/oracle/product/11.2.0/dbs/inittestdb0.ora
+1520230993:2018.03.05:11.24.24: pfile_edit db_name exists in pfile
+1520230993:2018.03.05:11.24.24: pfile_edit editing
+1520230993:2018.03.05:11.24.24: pfile_edit *.db_name='testdb0'
+1520230993:2018.03.05:11.24.24: create_spfile try to create spfile for testdb0
+1520230993: create spfile from pfile='/opt/oracle/product/11.2.0/dbs/inittestdb0.ora'
+1520230993: 
+1520230993: File created.
+1520230993: 
+1520230993:2018.03.05:11.24.24: create_spfile exiting with code: 0
+1520230993:2018.03.05:11.24.24: do_renew_test_db try to activate clone-standby
+1520230993:2018.03.05:11.24.24: activate_clone_db try to activate testdb0
+1520230993: ORACLE instance started.
+1520230993: 
+1520230993: Total System Global Area 943718400 bytes
+...
+1520230993: Database mounted.
+1520230993: 
+1520230993: DATABASE_ROLE||''||OPEN_MODE
+1520230993: --------------------------------------------------------------------------------
+1520230993: PHYSICAL STANDBY MOUNTED
+1520230993: 
+1520230993: alter database activate physical standby database
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: 
+1520230993: DATABASE_ROLE||''||OPEN_MODE
+1520230993: --------------------------------------------------------------------------------
+1520230993: PRIMARY MOUNTED
+1520230993: 
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: Database closed.
+1520230993: Database dismounted.
+1520230993: ORACLE instance shut down.
+1520230993: ORACLE instance started.
+1520230993: 
+1520230993: Total System Global Area 943718400 bytes
+...
+1520230993: Database mounted.
+1520230993: Database opened.
+1520230993:2018.03.05:11.28.24: activate_clone_db exiting with code: 0
+1520230993:2018.03.05:11.28.24: do_renew_test_db well ok: standby-db was activated successfully
+1520230993:2018.03.05:11.28.24: do_renew_test_db AFTER_ACTIVATE_SQL is empty
+1520230993:2018.03.05:11.28.24: process_tempts try to process temp-ts in db: testdb0
+1520230993: Default temp ts names is: TEMP
+1520230993: Default temp ts names doesn't has files
+1520230993: try to add tempfile
+1520230993: alter tablespace TEMP add tempfile '/db/u11/testdb0/oradata/maindb/temp_01.dbf' size 128M reuse autoextend on next 128M maxsize
+1520230993: unlimited
+1520230993:2018.03.05:11.28.25: process_tempts exiting with code: 0
+1520230993:2018.03.05:11.28.25: do_renew_test_db try to startup standby-db
+1520230993:2018.03.05:11.28.25: startup_db try to startup db with option: mount maindb
+1520230993: ORACLE instance started.
+1520230993: Total System Global Area 943718400 bytes
+...
+1520230993: Database mounted.
+1520230993: MOUNTED
+1520230993: 
+1520230993: db_name 			     string			       maindb
+1520230993: alert-log:
+1520230993: /var/log/oracle/maindb/diag/rdbms/maindb/maindb/trace/alert_maindb.log
+1520230993: 
+1520230993: HOME=/home/oracle
+1520230993: LD_LIBRARY_PATH=/opt/oracle/product/11.2.0/lib:/lib:/usr/lib:/usr/lib64
+1520230993: LOGNAME=oracle
+1520230993: MAIL=/var/spool/mail/oracle
+1520230993: OPRREPOS=/etc/oracle/repos.opr
+1520230993: ORACLE_HOME=/opt/oracle/product/11.2.0
+1520230993: ORACLE_SID=maindb
+1520230993: PATH=/usr/bin:/bin:/usr/sbin:/sbin:/opt/oracle/product/11.2.0/bin:/opt/rias//sbin:/opt/rias//bin:/opt/rias//sbin:/opt/rias/:/opt/rias//sbin:/opt/rias//bin:/root/bin
+1520230993: PS1=\u@$HOSTN: $ORACLE_SID \W\$ 
+1520230993: PWD=/home/oracle
+1520230993: TNS_ADMIN=/etc/oracle
+1520230993: USER=oracle
+1520230993:2018.03.05:11.28.34: startup_db OK: db maindb started with exit code: 0; TIME:0h 0m 9s
+1520230993:2018.03.05:11.28.34: turn_off_services work for maindb
+1520230993: alter system set service_names='' scope=memory
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: alter system register
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: db_name 			     string			       maindb
+1520230993:2018.03.05:11.28.34: turn_off_services exiting with code: 0
+1520230993:2018.03.05:11.28.34: RMAN_ENABLE=1
+1520230993:2018.03.05:11.28.34: do_renew_test_db ok, standby-db was activated successfully
+1520230993:2018.03.05:11.28.34: do_renew_test_db try to run post-operation script in clone-db
+1520230993:2018.03.05:11.28.34: exec_sql_script ok try to run /home/oracle/post_operations.sql for db testdb0
+1520230993: 
+1520230993: SQL*Plus: 
+1520230993: 
+1520230993: Copyright (c) 1982, 2011, Oracle.  All rights reserved.
+1520230993: 
+1520230993: Connected.
+1520230993: DEFINE _DATE	       = "05-03-18 11:28:35" (CHAR)
+1520230993: DEFINE _CONNECT_IDENTIFIER = "testdb0" (CHAR)
+1520230993: DEFINE _USER	       = "SYS" (CHAR)
+1520230993: DEFINE _PRIVILEGE      = "AS SYSDBA" (CHAR)
+1520230993: DEFINE _SQLPLUS_RELEASE = "1102" (CHAR)
+1520230993: DEFINE _EDITOR	       = "ed" (CHAR)
+1520230993: DEFINE 1	       = "testdb0" (CHAR)
+1520230993: DEFINE DBNAME	       = "testdb0" (CHAR)
+1520230993: SQL> set serveroutput on
+1520230993: SQL> prompt Database settings
+1520230993: Database settings
+1520230993: SQL> exec sys.dbms_system.ksdwrt(2, To_Char(SYSDATE,'yyyy.mm.dd:hh24:mi:ss')||' Database settings &&dbname');
+1520230993: 
+1520230993: PL/SQL procedure successfully completed.
+1520230993: 
+1520230993: SQL> 
+1520230993: SQL> shutdown immediate
+1520230993: Database closed.
+1520230993: Database dismounted.
+1520230993: ORACLE instance shut down.
+1520230993: SQL> startup mount
+1520230993: ORACLE instance started.
+1520230993: 
+1520230993: Total System Global Area 943718400 bytes
+...
+1520230993: Database mounted.
+1520230993: SQL> 
+1520230993: SQL> WHENEVER SQLERROR EXIT FAILURE
+1520230993: SQL> alter database noarchivelog;
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: SQL> alter database no force logging;
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: SQL> alter database open;
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: SQL> 
+1520230993: SQL> WHENEVER SQLERROR CONTINUE
+1520230993: SQL> alter database rename global_name to build.testing.example.com;
+1520230993: 
+1520230993: Database altered.
+1520230993: 
+1520230993: SQL> alter system set service_names='build.testing.example.com' scope=both;
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: SQL> alter system register;
+1520230993: 
+1520230993: System altered.
+1520230993: 
+1520230993: SQL> 
+1520230993: SQL> prompt End of Database settings
+1520230993: End of Database settings
+1520230993: 
+1520230993: SQL> exec sys.dbms_system.ksdwrt(2, To_Char(SYSDATE,'yyyy.mm.dd:hh24:mi:ss')||' Done &&dbname');
+1520230993: 
+1520230993: PL/SQL procedure successfully completed.
+1520230993: 
+1520230993: SQL> Disconnected 
+1520230993:2018.03.05:11.54.14: exec_sql_script exiting with code: 0
+1520230993:2018.03.05:11.54.14: do_renew_test_db done
+1520230993:2018.03.05:11.54.14: main exiting with rc=0
+1520230993:2018.03.05:11.54.14: main OK: Deleted lock-file: /var/run/rias/script_rnw_testdb0.lck
